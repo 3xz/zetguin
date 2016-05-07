@@ -1,0 +1,18 @@
+[
+{
+  "modid": "Zetguin",
+  "name": "Zetguins",
+  "description": "I <3 Penguins",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "https://github.com/3xz",
+  "updateUrl": "",
+  "authors": [
+    "Zetty"
+  ],
+  "credits": "Originally TwilightForest's penguins",
+  "logoFile": "assets/zetguin/textures/zetguin_logo.png",
+  "screenshots": [],
+  "dependencies": []
+}
+]
