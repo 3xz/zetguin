@@ -15,7 +15,6 @@ package zetguin;
 import net.minecraft.client.model.ModelBase;
 import net.minecraft.client.model.ModelRenderer;
 import net.minecraft.entity.Entity;
-import net.minecraft.util.MathHelper;
 
 import org.lwjgl.opengl.GL11;
 
@@ -115,8 +114,8 @@ public class ModelTFPenguin extends ModelBase
         head.rotateAngleX = par5 / (180F / (float)Math.PI);
         head.rotateAngleY = par4 / (180F / (float)Math.PI);
 
-        rightleg.rotateAngleX = MathHelper.cos(par1) * 0.7F * par2;
-        leftleg.rotateAngleX = MathHelper.cos(par1 + (float)Math.PI) * 0.7F * par2;
+        rightleg.rotateAngleX = (float) (Math.cos(par1) * 0.7F * par2);
+        leftleg.rotateAngleX = (float) (Math.cos(par1 + (float)Math.PI) * 0.7F * par2);
         
         rightarm.rotateAngleZ = par3;
         leftarm.rotateAngleZ = -par3;

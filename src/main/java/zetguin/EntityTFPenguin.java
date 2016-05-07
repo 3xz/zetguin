@@ -16,6 +16,7 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.DamageSource;
+import net.minecraft.util.SoundEvent;
 import net.minecraft.world.World;
 
 public class EntityTFPenguin extends EntityTFBird {
@@ -42,7 +43,7 @@ public class EntityTFPenguin extends EntityTFBird {
      * Returns the sound this mob makes while it's alive.
      */
 	@Override
-    protected String getLivingSound()
+    protected SoundEvent getAmbientSound()
     {
         return null;//"mob.chicken";
     }
@@ -83,7 +84,7 @@ public class EntityTFPenguin extends EntityTFBird {
     protected void applyEntityAttributes()
     {
         super.applyEntityAttributes();
-        this.getEntityAttribute(SharedMonsterAttributes.maxHealth).setBaseValue(10.0D); // max health
-        this.getEntityAttribute(SharedMonsterAttributes.movementSpeed).setBaseValue(0.2D);
+        this.getEntityAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(10.0D); // max health
+        this.getEntityAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.2D);
     }
 }

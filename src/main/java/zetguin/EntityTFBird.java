@@ -20,14 +20,6 @@ public abstract class EntityTFBird extends EntityAnimal {
 	}
 
 	/**
-	 * Returns true if the newer Entity AI code should be run
-	 */
-	@Override
-	public boolean isAIEnabled() {
-	    return true;
-	}
-
-	/**
 	 * Called frequently so the entity can update its state every tick as required. For example, zombies and skeletons
 	 * use this to react to sunlight and start to burn.
 	 */
@@ -75,7 +67,7 @@ public abstract class EntityTFBird extends EntityAnimal {
 	 * Called when the mob is falling. Calculates and applies fall damage.
 	 */
 	@Override
-	protected void fall(float par1) {}
+    public void fall(float distance, float damageMultiplier) {}
 
     /**
      * returns if this entity triggers Blocks.onEntityWalking on the blocks they walk on. used for spiders and wolves to
